@@ -23,4 +23,3 @@ export class ItemsController {
     return `Update ${id} - Name: ${updateItemDto.name} - Description: ${updateItemDto.description}`;
   }
 }
-
