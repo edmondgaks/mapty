@@ -16,8 +16,8 @@ import { Item } from './interfaces/item.interface';
 export class ItemsController {
   constructor(private readonly itemsService: ItemsService) {}
   @Get()
-  findAll(): string {
-    return 'Get all items';
+  findAll(): Item[] {
+    return this.itemsService.findAll();
   }
   @Get(':id')
   findOne(@Param('id') id): string {
